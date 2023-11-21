@@ -24,7 +24,7 @@ predicate isTest(Function test) {
 predicate calls(Function caller, Function callee) {
   exists(DataFlow::CallNode call |
     call.getEnclosingFunction() = caller and
-    call.getACallee() = callee and call.getCalleeName() = "pressActionKey"
+    call.getCalleeName() = "pressActionKey"
   )
 }
 
