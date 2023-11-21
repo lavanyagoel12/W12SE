@@ -31,4 +31,4 @@ predicate calls(Function caller, Function callee) {
 from Function test, Function callee
 where isTest(test) and
       calls(test, callee) and callee.getName() = "pressActionKey"
-select callee, "is directly called by a test"
+select test, "Directly calls pressActionKey method"
