@@ -7,5 +7,5 @@
 import javascript
 
 from Function function
-where function.getNumberOfLines < 10
-select function, "Found file less than 10 lines long: " + function.getName
+where function.getNumberOfLines() < 10
+select function, "Found file less than 10 lines long: " + function.getName()
